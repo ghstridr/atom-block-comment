@@ -1,7 +1,7 @@
 {
-	"name": "block-comment",
-	"version": "0.4.3",
-	"description": "Block comment",
+	"name": "block-comment-ng",
+	"version": "0.4.5",
+	"description": "Block comment NG",
 	"license": "MIT",
 	"main": "./lib/block-comment",
 	"repository": {},
@@ -11,7 +11,7 @@
 	},
 	"activationCommands": {
 		"atom-text-editor": [
-			"block-comment:toggle"
+			"block-comment-ng:toggle"
 		]
 	}
 }

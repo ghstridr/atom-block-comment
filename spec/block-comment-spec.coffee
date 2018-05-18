@@ -1,5 +1,5 @@
 {WorkspaceView} = require 'atom'
-BlockComment = require '../lib/block-comment'
+BlockComment = require '../lib/block-comment-ng'
 
 # Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
 #
