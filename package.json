@@ -3,7 +3,7 @@
 	"version": "0.4.5",
 	"description": "Block comment NG",
 	"license": "MIT",
-	"main": "./lib/block-comment",
+	"main": "./lib/block-comment-ng",
 	"repository": {},
 	"dependencies": {},
 	"engines": {
