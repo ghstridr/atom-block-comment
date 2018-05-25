@@ -6,25 +6,25 @@ BlockComment = require '../lib/block-comment-ng'
 # To run a specific `it` or `describe` block add an `f` to the front (e.g. `fit`
 # or `fdescribe`). Remove the `f` to unfocus the block.
 
-describe "BlockComment", ->
+describe "BlockCommentNG", ->
   activationPromise = null
 
   beforeEach ->
     atom.workspaceView = new WorkspaceView
     activationPromise = atom.packages.activatePackage('block-comment')
 
-  describe "when the block-comment:toggle event is triggered", ->
+  describe "when the block-comment-ng:toggle event is triggered", ->
     it "attaches and then detaches the view", ->
-      expect(atom.workspaceView.find('.block-comment')).not.toExist()
+      expect(atom.workspaceView.find('.block-comment-ng')).not.toExist()
 
       # This is an activation event, triggering it will cause the package to be
       # activated.
-      atom.workspaceView.trigger 'block-comment:toggle'
+      atom.workspaceView.trigger 'block-comment-ng:toggle'
 
       waitsForPromise ->
         activationPromise
 
       runs ->
-        expect(atom.workspaceView.find('.block-comment')).toExist()
-        atom.workspaceView.trigger 'block-comment:toggle'
-        expect(atom.workspaceView.find('.block-comment')).not.toExist()
+        expect(atom.workspaceView.find('.block-comment-ng')).toExist()
+        atom.workspaceView.trigger 'block-comment-ng:toggle'
+        expect(atom.workspaceView.find('.block-comment-ng')).not.toExist()

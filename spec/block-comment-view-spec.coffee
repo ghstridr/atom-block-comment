@@ -1,5 +1,5 @@
-# BlockCommentView = require '../lib/block-comment-view'
+# BlockCommentViewNG = require '../lib/block-comment-view'
 # 
-# describe "BlockCommentView", ->
+# describe "BlockCommentViewNG", ->
 #   it "has one valid test", ->
 #     expect("life").toBe "easy"
